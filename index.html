@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Galaxian - Classic Arcade</title>
+</head>
+<body>
+
+    <!-- CONTAINER UTAMA -->
+    <div id="game-wrapper">
+
+        <!-- AREA GAME UTAMA -->
+        <div id="game-container">
+
+            <!-- 1. HUD: Informasi Permainan -->
+            <div id="hud">
+                <span id="score-display">SCORE: 0000</span>
+                <span id="wave-display">WAVE: 1</span>
+                <span id="hi-display">HI: 0000</span>
+                <span id="lives-display">♥ 3</span>
+            </div>
+
+            <!-- 2. CANVAS: Area Render Game -->
+            <canvas id="gameCanvas" width="500" height="500"></canvas>
+
+            <!-- 3. OVERLAY: Layer Menu (dipakai ulang untuk START & GAME OVER) -->
+            <div id="overlay">
+                <h1 id="overlay-title">GALAXIAN</h1>
+                <h2 id="overlay-subtitle">CLASSIC ARCADE</h2>
+                <p id="overlay-text">Tembak alien sebelum mereka mencapai Anda!</p>
+                <button id="start-btn">START GAME</button>
+            </div>
+
+        </div>
+
+        <!-- 4. TOUCH / CLICK CONTROLS: Tombol Virtual -->
+        <div id="touch-controls">
+            <div class="dpad">
+                <button class="ctrl-btn" id="btn-left">‹</button>
+                <button class="ctrl-btn" id="btn-right">›</button>
+            </div>
+            <button class="ctrl-btn fire-btn" id="btn-fire">FIRE</button>
+        </div>
+
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
